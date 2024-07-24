@@ -1,0 +1,253 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* typography and icons */
+
+h1{
+    color: #EE6D17;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #999;
+}
+
+.liked{
+    color: red;
+}
+
+.retweeted {
+  color: limegreen;
+}
+
+/* layout */
+
+main, header{
+    width: 290px;
+    margin: 0 auto;
+}
+
+header{
+    padding-bottom: 25px;
+}
+
+.tweet-input-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* textareas + btn */
+
+textarea{
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+button{
+    background-color: #EE6D17;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 20px;
+    width: 100%; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* tweet */
+.isVerified{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.isVerified p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.isVerified img {
+    width: 0.875rem;
+    display: block;
+    margin-bottom: auto;
+}
+.tweet{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.tweet-inner{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tweet-details{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.tweet-detail{
+    display: flex;
+    gap: 4px;
+}
+
+.tweet-reply{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0px;
+    margin: 10px 0 10px 40px;
+    width: 80%;
+}
+
+.comment {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comment input {
+    width: 60%;
+    outline: none;
+    height: 30px;
+}
+
+
+
+.comment input {
+    border-bottom: 1px solid #EE6D17;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+.comment button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: #EE6D17;
+    margin-top: 10px;
+    padding: 0px;
+    border-radius: 14px;
+    width: 30%; 
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.handle{
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 0;
+}
+
+.tweet-text{
+    width: 207px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* images */
+
+.profile-pic{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-position: center top;
+}
+
+/* utility */
+.hidden{
+    display: none;
+}
+
+
+@media (min-width: 400px) {
+    main, header{
+        width: 70%;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    .tweet-inner div{
+        font-size: 0.9rem;
+        width: 70%;
+    }
+    .tweet-text{
+        width: auto;
+        font-size: 0.9rem;
+        line-height: 1.3em;
+    }
+}
+
+
+@media (min-width: 500px) {
+    .tweet-details {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 700px) {
+    main, header{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .tweet-inner div{
+        font-size: 1em;
+        width: 80%;
+    }
+    .tweet-input-area {
+        margin-bottom: 1.2em;
+    }
+    
+    .tweet-input-area .profile-pic, #tweet-input{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .tweet-inner .tweet-details {
+        width: 20%;
+    }
+    
+    .tweet-text{
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 0.625em;
+        font-size: 0.9rem;
+        line-height: 1.3em;
+    }
+    .profile-pic {
+        width: 3.75rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .comment button {
+        font-size: 0.9rem;
+    }
+
+}
